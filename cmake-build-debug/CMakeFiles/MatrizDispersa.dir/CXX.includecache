@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/utec/poo2/semana2/MatrizDispersa/SparseMatrix.cpp
+SparseMatrix.h
+E:/utec/poo2/semana2/MatrizDispersa/SparseMatrix.h
+SparseMatrix.h
+E:/utec/poo2/semana2/MatrizDispersa/SparseMatrix.h
+
+E:/utec/poo2/semana2/MatrizDispersa/SparseMatrix.h
+iostream
+-
+cstdlib
+-
+ctime
+-
+iomanip
+-
+
