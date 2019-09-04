@@ -3,6 +3,7 @@
 #include "SparseMatrix.h"
 
 int main() {
+    /*
     using namespace std;
 
     unsigned  int f1,c1,f2,c2,f3,c3;
@@ -41,6 +42,23 @@ int main() {
     EliminarMatriz(pM1, f1);
     EliminarMatriz(pM2,f2);
     EliminarMatriz(pM3,f3);
+*/
+    SparseMatrix matriz1(2,2);
+
+    matriz1.pedirEspacio();
+
+    matriz1.llenar();
+
+    matriz1.mostrar();
+
+
+    SparseMatrix matriz2(4,2);
+
+    matriz2.pedirEspacio();
+
+    matriz2.llenar();
+
+    matriz2.mostrar();
 
     return 0;
 

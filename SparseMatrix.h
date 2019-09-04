@@ -20,7 +20,21 @@ class SparseMatrix {
 
     using TipoMatriz = int;
 
-    TipoMatriz **matriz; 
+    TipoMatriz **matriz;
+    unsigned int filas;
+    unsigned int columnas;
+
+public:
+    SparseMatrix();
+    SparseMatrix(int, int);
+    virtual ~SparseMatrix();
+
+    void pedirEspacio();
+    void llenar();
+    void mostrar();
+    SparseMatrix operator+(const SparseMatrix &otro);
+    SparseMatrix operator*(const SparseMatrix &otro);
+
 
 };
 

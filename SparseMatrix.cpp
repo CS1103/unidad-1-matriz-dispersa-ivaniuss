@@ -1,7 +1,9 @@
 //
 // Created by Ivan Mamani on 29/08/2019.
 //
-#include "SparseMatrix.h"
+
+/*
+ * #include "SparseMatrix.h"
 void PideEspacio(int **&pM, unsigned int f,unsigned int c){
     pM = new int *[f];
     for(unsigned int i = 0; i < f; i++)
@@ -42,4 +44,61 @@ void EliminarMatriz(int **&pM,unsigned int f){
         pM = nullptr;
     }
 }
+ */
 #include "SparseMatrix.h"
+
+SparseMatrix::SparseMatrix() {
+    matriz = nullptr;
+    filas = 0;
+    columnas = 0;
+}
+
+SparseMatrix::SparseMatrix(int filas, int columnas) {
+
+    this -> filas  = filas;
+    this -> columnas = columnas;
+
+//    pedirEspacio(matriz, filas, columnas);
+
+}
+
+SparseMatrix::~SparseMatrix() {
+    for (unsigned int i = 0; i < filas; i++){
+        delete []matriz[i];
+        delete []matriz;
+        matriz = nullptr;
+    }
+}
+void SparseMatrix::pedirEspacio() {
+    matriz = new int*[filas];
+    for (unsigned int i = 0; i < filas; i++)
+        matriz[i] = new int[columnas];
+
+}
+
+void SparseMatrix::llenar() {
+
+    for(unsigned int i = 0; i < filas; i++){
+        for(unsigned int j = 0; j < columnas; j++)
+            cin >> matriz[i][j];
+    }
+}
+
+void SparseMatrix::mostrar() {
+
+    for(unsigned int i = 0; i < filas; i++){
+        for(unsigned int j = 0; j < columnas; j++){
+            cout << matriz[i][j] << " ";
+        }
+            cout << "\n";
+    }
+}
+
+SparseMatrix SparseMatrix::operator+(const SparseMatrix &otro) {
+    return SparseMatrix();
+}
+
+SparseMatrix SparseMatrix::operator*(const SparseMatrix &otro) {
+    return SparseMatrix();
+}
+
