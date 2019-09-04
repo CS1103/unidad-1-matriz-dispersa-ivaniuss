@@ -9,7 +9,6 @@
 #include <ctime>
 #include <iomanip>
 
-
 using namespace std;
 void PideEspacio(int **&pM, unsigned int f1,unsigned int c1);
 void LlenarMatriz(int **pM,unsigned int f,unsigned int c);
@@ -18,6 +17,10 @@ void multiplicarMatriz(int **pM1,int **pM2,int **pM3,unsigned int f1,unsigned in
 void EliminarMatriz(int **&pM,unsigned int f);
 
 class SparseMatrix {
+
+    using TipoMatriz = int;
+
+    TipoMatriz **matriz; 
 
 };
 
