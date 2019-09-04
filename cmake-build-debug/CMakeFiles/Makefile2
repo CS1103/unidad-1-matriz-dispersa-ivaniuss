@@ -58,10 +58,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\utec\poo2\semana2\MatrizDispersa
+CMAKE_SOURCE_DIR = E:\utec\poo2\semana3\unidad-1-matriz-dispersa-ivaniuss
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\utec\poo2\semana2\MatrizDispersa\cmake-build-debug
+CMAKE_BINARY_DIR = E:\utec\poo2\semana3\unidad-1-matriz-dispersa-ivaniuss\cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/MatrizDispersa.dir
@@ -70,7 +70,7 @@ CMAKE_BINARY_DIR = E:\utec\poo2\semana2\MatrizDispersa\cmake-build-debug
 CMakeFiles/MatrizDispersa.dir/all:
 	$(MAKE) -f CMakeFiles\MatrizDispersa.dir\build.make CMakeFiles/MatrizDispersa.dir/depend
 	$(MAKE) -f CMakeFiles\MatrizDispersa.dir\build.make CMakeFiles/MatrizDispersa.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\utec\poo2\semana2\MatrizDispersa\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target MatrizDispersa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\utec\poo2\semana3\unidad-1-matriz-dispersa-ivaniuss\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target MatrizDispersa"
 .PHONY : CMakeFiles/MatrizDispersa.dir/all
 
 # Include target in all.
@@ -80,9 +80,9 @@ all: CMakeFiles/MatrizDispersa.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MatrizDispersa.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\utec\poo2\semana2\MatrizDispersa\cmake-build-debug\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\utec\poo2\semana3\unidad-1-matriz-dispersa-ivaniuss\cmake-build-debug\CMakeFiles 3
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/MatrizDispersa.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\utec\poo2\semana2\MatrizDispersa\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\utec\poo2\semana3\unidad-1-matriz-dispersa-ivaniuss\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/MatrizDispersa.dir/rule
 
 # Convenience name for target.

@@ -1,4 +1,4 @@
-# Install script for directory: E:/utec/poo2/semana2/MatrizDispersa
+# Install script for directory: E:/utec/poo2/semana3/unidad-1-matriz-dispersa-ivaniuss
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/utec/poo2/semana2/MatrizDispersa/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/utec/poo2/semana3/unidad-1-matriz-dispersa-ivaniuss/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

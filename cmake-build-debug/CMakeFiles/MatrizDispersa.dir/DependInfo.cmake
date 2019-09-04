@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "E:/utec/poo2/semana2/MatrizDispersa/SparseMatrix.cpp" "E:/utec/poo2/semana2/MatrizDispersa/cmake-build-debug/CMakeFiles/MatrizDispersa.dir/SparseMatrix.cpp.obj"
-  "E:/utec/poo2/semana2/MatrizDispersa/main.cpp" "E:/utec/poo2/semana2/MatrizDispersa/cmake-build-debug/CMakeFiles/MatrizDispersa.dir/main.cpp.obj"
+  "E:/utec/poo2/semana3/unidad-1-matriz-dispersa-ivaniuss/SparseMatrix.cpp" "E:/utec/poo2/semana3/unidad-1-matriz-dispersa-ivaniuss/cmake-build-debug/CMakeFiles/MatrizDispersa.dir/SparseMatrix.cpp.obj"
+  "E:/utec/poo2/semana3/unidad-1-matriz-dispersa-ivaniuss/main.cpp" "E:/utec/poo2/semana3/unidad-1-matriz-dispersa-ivaniuss/cmake-build-debug/CMakeFiles/MatrizDispersa.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
