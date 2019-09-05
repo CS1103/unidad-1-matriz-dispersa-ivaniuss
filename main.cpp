@@ -52,7 +52,7 @@ int main() {
     matriz1.mostrar();
 
 
-    SparseMatrix matriz2(4,2);
+    SparseMatrix matriz2(2,2);
 
     matriz2.pedirEspacio();
 
@@ -60,6 +60,8 @@ int main() {
 
     matriz2.mostrar();
 
+
+    matriz1+matriz2;
     return 0;
 
 

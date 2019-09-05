@@ -46,15 +46,19 @@ void EliminarMatriz(int **&pM,unsigned int f){
 }
  */
 #include "SparseMatrix.h"
+#include <iostream>
 
 SparseMatrix::SparseMatrix() {
     matriz = nullptr;
+    matriztemp1 = nullptr;
+    matriztemp2 = nullptr;
     filas = 0;
     columnas = 0;
+    sizeSM = 0;
 }
 
-SparseMatrix::SparseMatrix(int filas, int columnas) {
-
+SparseMatrix::SparseMatrix(unsigned int filas, unsigned int columnas) {
+    sizeSM = 0;
     this -> filas  = filas;
     this -> columnas = columnas;
 
@@ -82,6 +86,14 @@ void SparseMatrix::llenar() {
         for(unsigned int j = 0; j < columnas; j++)
             cin >> matriz[i][j];
     }
+
+    for (int i = 0; i < filas; i++){
+        for (int j = 0; j < columnas; j++){
+            if (matriz[i][j] != 0)
+                sizeSM++;
+        }
+    }
+
 }
 
 void SparseMatrix::mostrar() {
@@ -92,13 +104,37 @@ void SparseMatrix::mostrar() {
         }
             cout << "\n";
     }
+
+    cout << sizeSM << "\n";
 }
 
 SparseMatrix SparseMatrix::operator+(const SparseMatrix &otro) {
-    return SparseMatrix();
+    SparseMatrix temporal1(3,sizeSM);
+    SparseMatrix temporal2(3,otro.sizeSM);
+    temporal1.pedirEspacio();
+    temporal2.pedirEspacio();
+
+        int k = 0;
+    for (int i = 0; i < filas; i++)
+        for (int j = 0; j < columnas; j++)
+            if (matriz[i][j] != 0)
+            {
+                temporal1.matriz[0][k] = i;
+                temporal1.matriz[1][k] = j;
+                temporal1.matriz[2][k] = matriz[i][j];
+                k++;
+            }
+    for (int i=0; i<3; i++){
+        for (int j=0; j<sizeSM; j++){
+            cout << temporal1.matriz[i][j] << " ";
+        }
+        cout <<"\n";
+    }
+
 }
 
-SparseMatrix SparseMatrix::operator*(const SparseMatrix &otro) {
-    return SparseMatrix();
-}
 
+SparseMatrix SparseMatrix::operator *(const SparseMatrix &otro) {
+
+
+}
