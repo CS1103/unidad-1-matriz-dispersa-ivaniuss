@@ -11,21 +11,11 @@
 
 using namespace std;
 
-/*
-void PideEspacio(int **&pM, unsigned int f1,unsigned int c1);
-void LlenarMatriz(int **pM,unsigned int f,unsigned int c);
-void ImprimirMatriz(int **pM,unsigned int f,unsigned int c);
-void multiplicarMatriz(int **pM1,int **pM2,int **pM3,unsigned int f1,unsigned int c1,unsigned int f2,unsigned int c2,unsigned int f3,unsigned int c3);
-void EliminarMatriz(int **&pM,unsigned int f);
-*/
 class SparseMatrix {
 
     using TipoMatriz = int;
 
     TipoMatriz **matriz;
-    TipoMatriz **matriztemp1;
-    TipoMatriz **matriztemp2;
-
     unsigned int filas;
     unsigned int columnas;
     unsigned int sizeSM;
